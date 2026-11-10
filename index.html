@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>برنامه هفتگی</title>
+  <meta name="description" content="مدیریت کارهای روزانه با تاریخ جلالی">
+
+  <meta name="theme-color" content="#dcdcdc" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1c1c1c" media="(prefers-color-scheme: dark)">
+  <link rel="manifest" href="/manifest.webmanifest">
+
+  <!-- iOS: نصب روی صفحه اصلی -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="برنامه">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png">
+
+  <!-- فونت وزیرمتن -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vazirmatn@33.0.3/Vazirmatn-font-face.css">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="app" id="app">
+    <nav class="weeknav" aria-label="جابجایی هفته">
+      <button class="nav-btn" id="prevWeek" aria-label="هفته قبل">›</button>
+      <button class="today-btn" id="todayBtn">امروز</button>
+      <button class="nav-btn" id="nextWeek" aria-label="هفته بعد">‹</button>
+    </nav>
+    <div id="days" class="days"></div>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
